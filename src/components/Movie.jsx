@@ -4,7 +4,7 @@ function Movie (props) {
     return <div id={imdbID} className="card movie">
     <div className="card-image waves-effect waves-block waves-light">
         {
-            Poster == 'N/A' ?
+            Poster === 'N/A' ?
             <img className="activator" src={`https://via.placeholder.com/300x400?text=${Title}`} />
             :
             <img className="activator" src={Poster} />
